@@ -1,0 +1,565 @@
+
+/* ==================================================================
+                       Font family Link start
+/* ==================================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* ==================================================================
+                       Font family Link End
+/* ==================================================================*/ 
+
+
+/* ===================================================================
+                          Common css Start 
+======================================================================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body{
+    background-color: #FBFBFD;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 1114px;
+    margin: 0 auto;
+}
+
+li , ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1 , h2 , h3 , h4 , h5 , h6 , p , li , ol , div , a{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --text-color : #091133;
+    --bg-color : #505F98;
+    --white : #fff;
+    --color : #2245E3;
+    --yellow : #FFD166;
+}
+/* ===================================================================
+                          Common css css End 
+======================================================================*/
+
+
+/* ===================================================================
+                          Navbar sec css Start
+=====================================================================*/
+.navbar{
+    padding: 18px 0;
+}
+
+.navbar .nav-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-item .logo-sec h2{
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--color);
+}
+
+.navbar .nav-item .menu-sec ul{
+    display: flex;
+    column-gap: 60px;
+}
+
+.navbar .nav-item .menu-sec ul li a{
+    color: var(--bg-color);
+    font-size: 14px;
+    font-weight: 400;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+
+.navbar .nav-item .menu-sec ul li a:hover{
+    color: #8fa2ee;
+}
+
+.navbar .nav-item .button-sec a{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 20px;
+    background-color: var(--text-color);
+    color: #fff;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    margin-right: 20px;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+
+.navbar .nav-item .button-sec a:hover{
+    background-color: #5461a0;
+}
+
+.navbar .nav-item .button-sec #a2{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 20px;
+    background-color: var(--yellow);
+    color: var(--text-color);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.navbar .nav-item .button-sec #a2:hover{
+    background-color: #e6b33c;
+}
+/* ===================================================================
+                          Navbar sec css End
+=====================================================================*/
+
+
+/* ==================================================================
+                              Hero sec css start
+=====================================================================*/
+.hero-sec{
+    padding: 120px 0;
+}
+
+.hero-sec .hero-item{
+    display: flex;
+    align-items: center;
+}
+
+.hero-sec .hero-item .hero-left-text-part h1{
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 66px;
+    letter-spacing: 1px;
+    color: var(--text-color);
+    padding-bottom: 20px;
+}
+
+.hero-sec .hero-item .hero-left-text-part p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--bg-color);
+    padding-right: 96px;
+}
+
+.hero-sec .hero-item .hero-left-text-part .hero-main-btn{
+    padding-top: 69px;
+}
+
+.hero-sec .hero-item .hero-left-text-part .hero-main-btn #a1{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 7px 20px;
+    background-color: var(--text-color);
+    color: var(--white);
+    margin-right: 30px;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+
+.hero-sec .hero-item .hero-left-text-part .hero-main-btn #a1:hover{
+    background-color: #2f3d7a;
+}
+
+.hero-sec .hero-item .hero-left-text-part .hero-main-btn #a2{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 32px;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+.hero-sec .hero-item .hero-left-text-part .hero-main-btn #a2:hover{
+    background-color: #091133;
+    color: var(--white);
+}
+
+/* ==================== Right part ==================== */
+.hero-sec .hero-item .hero-right-part .right-part-background{
+    background: url(/image/Path.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+}
+
+.hero-sec .hero-item .hero-right-part .right-part-background .image img{
+    width: 500px;
+}
+/* ==================================================================
+                              Hero sec css End
+=====================================================================*/
+
+
+/* ==================================================================
+                            Des sec css start
+=====================================================================*/
+.des-sec .des-item{
+    display: flex;
+    align-items: center;
+}
+
+.des-sec .des-item .left-text-part h1{
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding-bottom: 16px;
+}
+
+.des-sec .des-item .left-text-part p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--bg-color);
+}
+
+.des-sec .des-item .title{
+    padding-top: 80px;
+    display: flex;
+}
+
+.des-sec .des-item .title .sec-1 i{
+    font-size: 25px;
+    padding-bottom: 14px;
+}
+
+.des-sec .des-item .title .sec-1 h1{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding-bottom: 6px;
+}
+
+.des-sec .des-item .title .sec-1 p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--bg-color);
+    padding-right: 32px;
+}
+/* ==================================================================
+                            Des sec css End
+=====================================================================*/
+
+
+/* =================================================================
+                        More sec css start
+===================================================================*/
+.more-sec-1{
+    padding: 151px 0;
+}
+
+.more-sec-1 .more-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.more-sec-1 .more-item .right-part-text{
+    padding-left: 193px;
+}
+
+.more-sec-1 .more-item .right-part-text h1{
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding-bottom: 16px;
+}
+
+.more-sec-1 .more-item .right-part-text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--bg-color);
+}
+
+/* ================= More sec 2 ========== */
+.more-sec-2 .more-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.more-sec-2 .more-item .right-part-text{
+    padding-left: 128px;
+}
+
+.more-sec-2 .more-item .right-part-text h1{
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding-bottom: 16px;
+}
+
+.more-sec-2 .more-item .right-part-text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--bg-color);
+}
+/* ===================== More sec 3 ================== */
+.more-sec-3{
+    padding: 151px 0;
+}
+
+.more-sec-3 .more-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.more-sec-3 .more-item .right-part-text{
+    padding-left: 229px;
+}
+
+.more-sec-3 .more-item .right-part-text h1{
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding-bottom: 16px;
+}
+
+.more-sec-3 .more-item .right-part-text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--bg-color);
+    padding-bottom: 44px;
+}
+
+.more-sec-3 .more-item .right-part-text a{
+    color: var(--white);
+    background-color: var(--text-color);
+    padding: 5px 25px;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+
+.more-sec-3 .more-item .right-part-text a:hover{
+    background-color: #36406b;
+}
+/* =================================================================
+                        More sec css End
+===================================================================*/
+
+
+/* =================================================================
+                       Price sec css start
+====================================================================*/
+.price-sec{
+   background: url(/image/Rectangle.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding-top: 300px;
+   padding-bottom: 200px;
+}
+
+.price-sec .text-item{
+    text-align: center;
+}
+
+.price-sec .text-item h1{
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding-bottom: 16px;
+}
+
+.price-sec .text-item p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--bg-color);
+    padding: 0 264px;
+}
+
+.price-sec .text-item .price{
+    padding-top: 35px;
+    padding-bottom: 60px;
+}
+
+.price-sec .text-item .price h3{
+    font-size: 50px;
+    font-weight: 500;
+    color: #222F65;
+}
+
+.price-sec .text-item .price h4{
+    font-size: 16px;
+    font-weight: 400;
+    color: #37447E;
+}
+
+.price-sec .text-item .price-btn p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #5D6970;
+    padding-bottom: 9px;
+}
+
+.price-sec .text-item .price-btn a{
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+    background-color: var(--text-color);
+    padding: 7px 20px;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+
+.price-sec .text-item .price-btn a:hover{
+    background-color: #434e7c;
+}
+/* =================================================================
+                       Price sec css End
+====================================================================*/
+
+
+/* ===============================================================
+                        Footer css start
+=================================================================*/
+.footer{
+    padding-top: 61px;
+    padding-bottom: 32px;
+    background-color: #E7ECFF;
+}
+
+.footer .first-footer-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 47px;
+}
+
+.footer .first-footer-item p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #939EA4;
+}
+
+.footer .first-footer-item .logo h2{
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--color);
+}
+
+.footer .first-footer-item .btn a{
+    background-color: var(--text-color);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 20px;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+
+.footer .first-footer-item .btn a:hover{
+    background-color: #2f3d7a;
+}
+
+.footer .line{
+    height: 1px;
+    width: 100%;
+    background-color: #CDD1D4;
+}
+/* ============= Second footer item css start ============== */
+.footer .second-footer-item{
+    padding-top: 20px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .second-footer-item .menu ul{
+    display: flex;
+    column-gap: 60px;
+}
+
+.footer .second-footer-item .menu ul li a{
+    color: #929ECC;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+}
+
+.footer .second-footer-item .menu ul li a:hover{
+    color: var(--color);
+}
+
+.footer .second-footer-item .footer-icon a{
+   color: #929ECC;
+   padding-right: 30px;
+   transition: all linear .2s;
+   -webkit-transition: all linear .2s;
+   -moz-transition: all linear .2s;
+   -ms-transition: all linear .2s;
+   -o-transition: all linear .2s;
+}
+
+.footer .second-footer-item .footer-icon a:nth-child(1):hover{
+    color: #3b5998;
+}
+
+.footer .second-footer-item .footer-icon a:nth-child(2):hover{
+    color: #0072b1;
+}
+
+.footer .second-footer-item .footer-icon a:nth-child(3):hover{
+    color: #00acee;
+}
+
+.footer .second-footer-item .footer-icon a:nth-child(4):hover{
+    color: red;
+}
+
+.footer .second-footer-item .footer-icon a:nth-child(5):hover{
+    color:#b53a84
+}
+/* ============= Second footer item css End ============== */
+/* ===============================================================
+                        Footer css End
+=================================================================*/
